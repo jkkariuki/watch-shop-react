@@ -23,7 +23,9 @@ function App() {
     const getProducts = async () => {
       let response;
       try {
-        response = await axios.get("http://localhost:5000/api/products");
+        response = await axios.get(
+          "https://watch-shop-server.onrender.com/api/products"
+        );
         console.log(response.data);
         setProducts(response.data);
       } catch (error) {

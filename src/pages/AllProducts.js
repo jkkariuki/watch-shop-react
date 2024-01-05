@@ -6,6 +6,7 @@ import { Navbar } from "../components/Navbar";
 import "../css/AllProducts.css";
 
 function AllProducts(props) {
+  const { onAdd } = props;
   const [collection, setCollection] = useState([]);
   useEffect(() => {
     getProducts().then((res) => {
@@ -31,6 +32,13 @@ function AllProducts(props) {
                 <p>{item.name}</p>
                 <p>${item.price}</p>
               </Link>
+              <button
+                onClick={() => onAdd(item)}
+                type="button"
+                className="btn btn-dark btn-lg addCartBtn"
+              >
+                Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+              </button>
             </div>
           );
         })}

@@ -1,0 +1,15 @@
+.cartContainer{
+    margin: 0 auto
+}
+.cartItmImg{
+    height: 100px;
+    width: 100px;
+}
+
+.addRemove{
+    margin-top: 20px
+}
+
+.itemPrice{
+    margin-top: 20px;
+}

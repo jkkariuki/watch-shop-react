@@ -6,6 +6,7 @@ import { getProductById } from "../apiCalls/productApi";
 
 function ProductPage(props) {
   const productId = useParams();
+  const { onAdd } = props;
   const [singleProduct, setSingleProduct] = useState({});
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState(0);
@@ -60,7 +61,11 @@ function ProductPage(props) {
           <h4>${singleProduct.price}</h4>
           <p className="description">30% Off Use Code: GIFT30</p>
           <p className="productDesc">{singleProduct.description}</p>
-          <button type="button" className="btn btn-dark btn-lg addCartBtn">
+          <button
+            onClick={() => onAdd(singleProduct)}
+            type="button"
+            className="btn btn-dark btn-lg addCartBtn"
+          >
             Add to Cart <i class="fa-solid fa-cart-shopping"></i>
           </button>
           <button

@@ -1,0 +1,30 @@
+.allProductsHero{
+    background-image: url("../pages/imgs/watchCollection1.png") ;
+    background-size: cover;
+    background-position: center;
+    height:500px
+}
+
+.allProductsHeader{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px
+}
+
+.mainCollection{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.productImg{
+    width: 80%
+}
+
+.productCard p{
+    color: black;
+    font-size: large;
+    text-decoration: none;
+}
+.productCard a{
+    text-decoration: none;
+}

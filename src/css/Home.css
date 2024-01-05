@@ -1,0 +1,114 @@
+
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.tagLine{
+    margin: 10% auto;
+    font-size: 75px;
+}
+
+.heroImg{
+    height: 100%;
+    width: 100%;
+}
+
+.hero{
+    margin: 5% auto
+}
+
+/* .featured{
+    float: left;
+    width: 33.33%;
+    padding: 5px;}
+
+.featuredRow{
+    content: "";
+  clear: both;
+  display: table;
+} */
+.featuredWatches{
+    margin: 5% auto
+}
+.featured img{
+    width:300px
+
+}
+
+.downloadHeader{
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+}
+.phoneImg{
+    width: 485px;
+    height: 500px;
+}
+.appDiv{
+    margin: 5% auto;
+    padding: 0px 10%
+}
+
+.appSection{
+    margin: 40px auto;
+}
+
+.appStoreImg{
+    width: 300px;
+    margin: 0px auto;
+}
+.downloadText{
+    text-align: left;
+    margin: 10% auto 0px;
+    font-size: 2em;
+
+}
+
+.text{
+    text-align: justify;
+    font-size: 60px
+}
+
+
+.blogContainer{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px
+
+}
+.mensBest{
+    background-image: url("../pages/imgs/youngGuywatch.png");
+    background-size: contain;
+    background-repeat: no-repeat;   
+    background-position: center; 
+    padding: 50px;
+    height: 500px;
+    opacity: 0.8;
+  transition: 0.3s;
+
+}
+.womensBest{
+    background-image: url("../pages/imgs/youngLadywatch.png");
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;   
+    padding: 50px;
+    height: 500px;
+    opacity: 0.8;
+  transition: 0.3s;
+
+}
+.bestSellers:hover{opacity: 1}
+
+.bestSellerText{
+margin-top: 70%;
+color:white
+}
+
+.foot{
+    margin-top: 100px
+}

@@ -1,0 +1,48 @@
+
+.productPgContainer{
+    margin: 10% auto;
+    text-align: center;
+}
+
+.prdImg{
+    width: 400px
+}
+
+.productDesc{
+    width: 500px;
+    margin: 20px auto
+}
+
+.namePriceDiv{
+    margin:3% auto;
+    text-align: left;
+}
+
+.namePriceDiv h3{
+    margin-bottom: 20px;
+}
+
+.namePriceDiv p{
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 100%;
+}
+
+.description{
+    color: green
+}
+
+.addCartBtn{
+    border-radius: 0;
+}
+
+/* .featuresDiv{
+    
+margin-left:-250px;
+transition-property: margin-left;
+transition-duration: 2s;
+} */
+
+
+
+

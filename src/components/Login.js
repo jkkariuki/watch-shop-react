@@ -9,7 +9,7 @@ export const Login = () => {
     e.preventDefault();
     console.log(email);
     axios
-      .post("http://localhost:5000/api/users/login", {
+      .post("https://watch-shop-server.onrender.com/api/users/login", {
         email,
         password,
       })

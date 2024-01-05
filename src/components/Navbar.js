@@ -18,7 +18,7 @@ export const Navbar = () => {
     e.preventDefault();
 
     const result = await axios
-      .post("http://localhost:5000/api/users/logout")
+      .post("https://watch-shop-server.onrender.com/api/users/logout")
       .then((response) => {
         alert(response.data.message);
         localStorage.setItem("user", null);

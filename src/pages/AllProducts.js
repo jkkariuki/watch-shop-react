@@ -26,7 +26,7 @@ function AllProducts(props) {
               <Link to={`/collection/${item._id}`}>
                 <img
                   className="productImg"
-                  src={`http://localhost:5000/images/${item.image}`}
+                  src={`https://watch-shop-server.onrender.com/images/${item.image}`}
                 />
                 <p>{item.name}</p>
                 <p>${item.price}</p>

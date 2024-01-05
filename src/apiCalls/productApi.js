@@ -5,7 +5,9 @@ export const getProducts = async () => {
   let response;
 
   try {
-    response = await axios.get("http://localhost:5000/api/products");
+    response = await axios.get(
+      "https://watch-shop-server.onrender.com/api/products"
+    );
     console.log(response.data);
     return response.data;
   } catch (error) {
@@ -17,7 +19,9 @@ export const getProductById = async (id) => {
   let response;
 
   try {
-    response = await axios.get(`http://localhost:5000/api/products/${id}`);
+    response = await axios.get(
+      `https://watch-shop-server.onrender.com/api/products/${id}`
+    );
     console.log(response.data);
     return response.data;
   } catch (error) {

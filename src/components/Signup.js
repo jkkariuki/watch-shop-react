@@ -9,7 +9,7 @@ export const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5000/api/users/register", {
+      .post("https://watch-shop-server.onrender.com/api/users/register", {
         name,
         email,
         password,

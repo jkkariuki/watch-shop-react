@@ -42,7 +42,7 @@ export const AddProducts = () => {
     console.log(formData);
 
     const result = await axios.post(
-      "http://localhost:5000/api/products/add",
+      "https://watch-shop-server.onrender.com/api/products/add",
       formData,
       {
         headers: {

@@ -15,7 +15,9 @@ export const AddProducts = () => {
     const getMe = async () => {
       let response;
       try {
-        response = await axios.get("http://localhost:5000/api/users/me");
+        response = await axios.get(
+          "https://watch-shop-server.onrender.com/api/users/me"
+        );
         console.log(response.data);
 
         setAuthenticated(response.data);

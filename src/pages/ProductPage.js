@@ -51,7 +51,7 @@ function ProductPage(props) {
         <div className="col-lg-6 offset-lg-2">
           <img
             className="prdImg"
-            src={`http://localhost:5000/images/${singleProduct.image}`}
+            src={`https://watch-shop-server.onrender.com/images/${singleProduct.image}`}
           />
         </div>
 

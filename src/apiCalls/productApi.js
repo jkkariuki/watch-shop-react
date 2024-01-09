@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 
 export const getProducts = async () => {
   let response;
@@ -35,14 +36,16 @@ export const checkout = async (cartItems) => {
 
   try {
     response = await axios
-      .post("https://watch-shop-server.onrender.com/api/checkout", {
-        headers: {
-          Authorization: `Bearer ${process.env.STRIPE_KEY}`,
-        },
-        body: JSON.stringify({ items: cartItems }),
-      })
+      .post(
+        "https://watch-shop-server.onrender.com/api/checkout",
+        // headers: {
+        //   "Access-Control-Allow-Origin": "*",
+        // },
+        cartItems
+      )
       .then((response) => {
-        return response.json();
+        console.log(response);
+        window.location.assign(response.data.url);
       })
       .then((response) => {
         window.location.assign(response.url);

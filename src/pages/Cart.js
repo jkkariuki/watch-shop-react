@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Cart.css";
+import { checkout } from "../apiCalls/productApi";
 
 const Cart = (props) => {
   const { cartItems, onAdd, onRemove, onDelete } = props;
@@ -64,7 +65,7 @@ const Cart = (props) => {
           </div>
           <hr />
           <div className="row">
-            <button onClick>Checkout</button>
+            <button onClick={() => checkout(cartItems)}>Checkout</button>
           </div>
         </>
       )}

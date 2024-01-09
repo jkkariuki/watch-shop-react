@@ -40,6 +40,8 @@ export const checkout = async (cartItems) => {
         "https://watch-shop-server.onrender.com/api/checkout",
         {
           headers: {
+            Authorization: `Bearer ${process.env.STRIPE_KEY}`,
+
             "Access-Control-Allow-Origin": "*",
           },
         },

@@ -38,9 +38,11 @@ export const checkout = async (cartItems) => {
     response = await axios
       .post(
         "https://watch-shop-server.onrender.com/api/checkout",
-        // headers: {
-        //   "Access-Control-Allow-Origin": "*",
-        // },
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+        },
         cartItems
       )
       .then((response) => {
